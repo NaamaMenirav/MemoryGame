@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Memory Matching Game</title>
+        <link href="favicon.ico" rel="icon">
+        <link href="first-page.css" rel="stylesheet">        
+    </head>
+    <body>
+        <img src="images/game-logo.png" alt="Memory Matching Game">
+        <form id="start-game-form" action="sec-page.html" method="get">
+            <label>Username:</label>
+            <input name="username" type="text" id="username" required>
+            <label>Number of Cards:</label>
+            <p>* Note: Please pick a number between 10 and 50</p>
+            <input name="cards" type="number" id="cards" min="10" max="50" required>
+            <input type="submit" id="btn-start-game" value="Start Game">
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
+                integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+                crossorigin="anonymous">
+        </script>
+    </body>
+</html>
