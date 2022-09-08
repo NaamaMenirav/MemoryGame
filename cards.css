@@ -1,0 +1,29 @@
+body {
+    max-width: 80em;
+}
+
+.not-visible{
+    background-image: url(images/back-side.png);
+    background-size: 12rem 18.5rem;
+}
+
+.not-visible * {
+    visibility: hidden;
+}
+
+.card {
+    width: 12rem;
+    height: 18.5rem;
+    margin: 10px;
+}
+
+/* Shows an outer shadow */
+.card:not(.not-pressable):hover{
+    cursor: pointer;
+    box-shadow: 0 20px 30px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+.card:not(.not-pressable):active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
